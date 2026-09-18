@@ -1,3 +1,27 @@
 spring:
   application:
     name: datascale
+  datasource:
+    url: jdbc:postgresql://localhost:5432/datascale
+    username: datascale
+    password: datascale
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/master.xml
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

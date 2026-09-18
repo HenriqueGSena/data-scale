@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.liquibase.org/xml/ns/dbchangelog
+            https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="20260917205327_create_financial_transaction" author="sena">
+        <createTable tableName="financial_transaction">
+            <column name="id" type="UUID" defaultValueComputed="gen_random_uuid()">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="transaction_date" type="DATE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="category" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="amount" type="NUMERIC(15,2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="now()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20260917205327_idx_financial_transaction_category_date" author="sena">
+        <createIndex indexName="idx_financial_transaction_category_date" tableName="financial_transaction">
+            <column name="category"/>
+            <column name="transaction_date"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="20260917205327_idx_financial_transaction_date" author="sena">
+        <createIndex indexName="idx_financial_transaction_date" tableName="financial_transaction">
+            <column name="transaction_date"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

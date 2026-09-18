@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.liquibase.org/xml/ns/dbchangelog
+            https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="20260917205455_create_processing_log" author="sena">
+        <createTable tableName="processing_log">
+            <column name="id" type="UUID" defaultValueComputed="gen_random_uuid()">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="job_id" type="UUID">
+                <constraints nullable="false"
+                             foreignKeyName="fk_processing_log_ingestion_audit"
+                             references="ingestion_audit(id)"/>
+            </column>
+            <column name="level" type="VARCHAR(10)" defaultValue="INFO">
+                <constraints nullable="false"/>
+            </column>
+            <column name="message" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="line_reference" type="BIGINT"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="now()">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20260917205455_idx_processing_log_job_id_created_at" author="sena">
+        <createIndex indexName="idx_processing_log_job_id_created_at" tableName="processing_log">
+            <column name="job_id"/>
+            <column name="created_at"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>
