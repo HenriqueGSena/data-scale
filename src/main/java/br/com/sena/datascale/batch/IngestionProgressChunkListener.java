@@ -11,12 +11,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
-/**
- * NOTA: ChunkListener/ChunkContext aqui estão no pacote "classico" do Spring Batch.
- * Como o projeto está no Spring Batch 6.0.5 (que já reorganizou JobExecution, StepExecution
- * e JobExecutionListener, como vimos antes), se o compilador reclamar desse import, é o mesmo
- * tipo de ajuste que já fizemos — me manda o erro exato que eu corrijo o caminho certo.
- */
 @Component
 @RequiredArgsConstructor
 public class IngestionProgressChunkListener implements ChunkListener {
