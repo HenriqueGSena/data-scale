@@ -38,18 +38,16 @@ public class IngestionBatchConfig {
         return new FlatFileItemReaderBuilder<FinancialTransactionCsvRow>()
                 .name("financialTransactionReader")
                 .resource(new FileSystemResource(filePath))
-                .linesToSkip(1) // cabecalho
+                .linesToSkip(1)
                 .delimited()
                 .names("id", "data", "categoria", "valor", "descricao")
                 .targetType(FinancialTransactionCsvRow.class)
-                .strict(false) // linha com coluna faltando não derruba a leitura, so vira campo null
+                .strict(false)
                 .build();
     }
 
     @Bean
     public JdbcBatchItemWriter<FinancialTransaction> financialTransactionWriter(DataSource dataSource) {
-        // Não inclui a coluna "id": o próprio Postgres aplica o default gen_random_uuid()
-        // definido no Liquibase. Bypassa o Hibernate de propósito aqui (ver nota no README).
         return new JdbcBatchItemWriterBuilder<FinancialTransaction>()
                 .dataSource(dataSource)
                 .sql("""
@@ -83,7 +81,7 @@ public class IngestionBatchConfig {
                 .processor(financialTransactionItemProcessor)
                 .writer(financialTransactionWriter)
                 .faultTolerant()
-                .skipPolicy(new AlwaysSkipItemSkipPolicy()) // toda linha invalida vira log de auditoria, nunca derruba o job
+                .skipPolicy(new AlwaysSkipItemSkipPolicy())
                 .listener(ingestionSkipListener)
                 .build();
     }

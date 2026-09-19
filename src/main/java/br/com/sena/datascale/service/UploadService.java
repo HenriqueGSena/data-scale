@@ -58,10 +58,6 @@ public class UploadService {
         return ingestionAuditRepository.save(audit);
     }
 
-    /**
-     * transferTo não materializa o arquivo inteiro no heap: o Tomcat já grava o multipart em
-     * disco durante o upload (file-size-threshold=0), então isso é essencialmente um move/rename.
-     */
     private Path storeFile(MultipartFile file, IngestionAudit audit) {
         Path destination = Path.of(uploadDir, audit.getId() + "-" + file.getOriginalFilename());
         try {

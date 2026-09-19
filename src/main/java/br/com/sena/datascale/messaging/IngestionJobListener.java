@@ -29,8 +29,6 @@ public class IngestionJobListener {
 
             jobLauncher.run(ingestionJob, jobParameters);
         } catch (Exception e) {
-            // Sem fila de dead-letter configurada ainda: rejeitar sem reenfileirar evita
-            // loop infinito de retry para uma mensagem estruturalmente quebrada.
             log.error("Falha ao iniciar o job de ingestao para jobId={}", message.jobId(), e);
             throw new AmqpRejectAndDontRequeueException("Falha ao iniciar job de ingestao", e);
         }
