@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   application:
     name: datascale
@@ -13,6 +15,7 @@ spring:
     hibernate:
       ddl-auto: validate
     show-sql: false
+    open-in-view: false
     properties:
       hibernate:
         format_sql: true
@@ -25,3 +28,20 @@ spring:
     port: 5672
     username: guest
     password: guest
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+      file-size-threshold: 0
+app:
+  upload:
+    dir: /tmp/datascale-uploads
+  rabbitmq:
+    exchange: ingestion.exchange
+    queue: ingestion.queue
+    routing-key: ingestion.process
