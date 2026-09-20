@@ -1,11 +1,13 @@
 package br.com.sena.datascale.batch;
 
 
+import br.com.sena.datascale.dto.IngestionProgress;
 import br.com.sena.datascale.entities.ProcessingLog;
 import br.com.sena.datascale.entities.enums.IngestionStatus;
 import br.com.sena.datascale.entities.enums.LogLevel;
 import br.com.sena.datascale.repository.IngestionAuditRepository;
 import br.com.sena.datascale.repository.ProcessingLogRepository;
+import br.com.sena.datascale.service.IngestionProgressPublisherService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.BatchStatus;
@@ -24,6 +26,7 @@ public class IngestionJobExecutionListener implements JobExecutionListener {
 
     private final IngestionAuditRepository ingestionAuditRepository;
     private final ProcessingLogRepository processingLogRepository;
+    private final IngestionProgressPublisherService progressPublisher;
 
     @Override
     public void beforeJob(JobExecution jobExecution) {
@@ -33,6 +36,7 @@ public class IngestionJobExecutionListener implements JobExecutionListener {
             ingestionAuditRepository.save(audit);
         });
         registrarLog(jobId, LogLevel.INFO, "Job iniciado.");
+        progressPublisher.publish(jobId, new IngestionProgress(jobId, IngestionStatus.PROCESSING, 0, 0, 0));
     }
 
     @Override
@@ -48,13 +52,16 @@ public class IngestionJobExecutionListener implements JobExecutionListener {
             comErro += step.getSkipCount();
         }
 
+        // Cópias final: reatribuídas no for acima, então precisam ser "effectively final"
+        // pra poderem ser capturadas pela lambda do ifPresent logo abaixo.
         final long totalLidas = lidas;
         final long totalGravadas = gravadas;
         final long totalComErro = comErro;
         final boolean sucesso = jobExecution.getStatus() == BatchStatus.COMPLETED;
+        final IngestionStatus statusFinal = sucesso ? IngestionStatus.COMPLETED : IngestionStatus.FAILED;
 
         ingestionAuditRepository.findById(jobId).ifPresent(audit -> {
-            audit.setStatus(sucesso ? IngestionStatus.COMPLETED : IngestionStatus.FAILED);
+            audit.setStatus(statusFinal);
             audit.setTotalLinesRead(totalLidas);
             audit.setLinesProcessed(totalGravadas);
             audit.setLinesWithError(totalComErro);
@@ -68,6 +75,10 @@ public class IngestionJobExecutionListener implements JobExecutionListener {
         registrarLog(jobId, sucesso ? LogLevel.INFO : LogLevel.ERROR,
                 "Job finalizado com status %s. Lidas=%d, gravadas=%d, com erro=%d."
                         .formatted(jobExecution.getStatus(), totalLidas, totalGravadas, totalComErro));
+
+        // Evento terminal: garante que quem está ouvindo o SSE recebe o status final
+        // e fecha a conexão, mesmo que o job tenha sido rápido demais pro chunk listener disparar.
+        progressPublisher.publish(jobId, new IngestionProgress(jobId, statusFinal, totalLidas, totalGravadas, totalComErro));
 
         log.info("Job {} finalizado: status={}, lidas={}, gravadas={}, comErro={}",
                 jobId, jobExecution.getStatus(), totalLidas, totalGravadas, totalComErro);

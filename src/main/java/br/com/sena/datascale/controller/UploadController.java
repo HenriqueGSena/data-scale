@@ -3,7 +3,7 @@ package br.com.sena.datascale.controller;
 
 import br.com.sena.datascale.dto.UploadResponse;
 import br.com.sena.datascale.entities.enums.IngestionStatus;
-import br.com.sena.datascale.exceptions.InvalidUploadException;
+import br.com.sena.datascale.exception.InvalidUploadException;
 import br.com.sena.datascale.service.UploadService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -73,7 +73,8 @@ public class IngestionBatchConfig {
             FlatFileItemReader<FinancialTransactionCsvRow> financialTransactionReader,
             ItemProcessor<FinancialTransactionCsvRow, FinancialTransaction> financialTransactionItemProcessor,
             JdbcBatchItemWriter<FinancialTransaction> financialTransactionWriter,
-            IngestionSkipListener ingestionSkipListener) {
+            IngestionSkipListener ingestionSkipListener,
+            IngestionProgressChunkListener ingestionProgressChunkListener) {
 
         return new StepBuilder("ingestionStep", jobRepository)
                 .<FinancialTransactionCsvRow, FinancialTransaction>chunk(CHUNK_SIZE, transactionManager)
@@ -83,6 +84,7 @@ public class IngestionBatchConfig {
                 .faultTolerant()
                 .skipPolicy(new AlwaysSkipItemSkipPolicy())
                 .listener(ingestionSkipListener)
+                .listener(ingestionProgressChunkListener)
                 .build();
     }
 

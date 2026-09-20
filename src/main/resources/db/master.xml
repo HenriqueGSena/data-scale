@@ -9,4 +9,5 @@
     <include file="db/changelog/20260917205327_create_financial_transaction.xml"/>
     <include file="db/changelog/20260917205417_create-ingestion_audit.xml"/>
     <include file="db/changelog/20260917205455_create_processing_log.xml"/>
+    <include file="db/changelog/20260920122433_create_pagination_index.xml"/>
 </databaseChangeLog>
