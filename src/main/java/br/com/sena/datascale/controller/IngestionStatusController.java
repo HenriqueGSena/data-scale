@@ -1,7 +1,7 @@
 package br.com.sena.datascale.controller;
 
 import br.com.sena.datascale.dto.IngestionStatusResponse;
-import br.com.sena.datascale.exceptions.IngestionNotFoundException;
+import br.com.sena.datascale.exception.IngestionNotFoundException;
 import br.com.sena.datascale.service.IngestionStatusService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

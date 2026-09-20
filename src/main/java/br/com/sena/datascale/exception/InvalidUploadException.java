@@ -1,4 +1,4 @@
-package br.com.sena.datascale.exceptions;
+package br.com.sena.datascale.exception;
 
 public class InvalidUploadException extends RuntimeException {
 

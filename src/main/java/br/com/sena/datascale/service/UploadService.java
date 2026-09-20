@@ -5,7 +5,7 @@ import br.com.sena.datascale.dto.IngestionJobMessage;
 import br.com.sena.datascale.dto.UploadResponse;
 import br.com.sena.datascale.entities.IngestionAudit;
 import br.com.sena.datascale.entities.enums.IngestionStatus;
-import br.com.sena.datascale.exceptions.InvalidUploadException;
+import br.com.sena.datascale.exception.InvalidUploadException;
 import br.com.sena.datascale.repository.IngestionAuditRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

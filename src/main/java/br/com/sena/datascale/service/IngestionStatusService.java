@@ -2,7 +2,7 @@ package br.com.sena.datascale.service;
 
 import br.com.sena.datascale.dto.IngestionStatusResponse;
 import br.com.sena.datascale.entities.IngestionAudit;
-import br.com.sena.datascale.exceptions.IngestionNotFoundException;
+import br.com.sena.datascale.exception.IngestionNotFoundException;
 import br.com.sena.datascale.repository.IngestionAuditRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

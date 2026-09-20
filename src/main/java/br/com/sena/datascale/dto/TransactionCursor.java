@@ -1,5 +1,7 @@
 package br.com.sena.datascale.dto;
 
+import br.com.sena.datascale.exception.InvalidCursorException;
+
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.Base64;
@@ -14,8 +16,12 @@ public record TransactionCursor(LocalDate transactionDate, UUID id) {
     }
 
     public static TransactionCursor decode(String cursor) {
-        String raw = new String(Base64.getUrlDecoder().decode(cursor), StandardCharsets.UTF_8);
-        String[] parts = raw.split("\\|", 2);
-        return new TransactionCursor(LocalDate.parse(parts[0]), UUID.fromString(parts[1]));
+        try {
+            String raw = new String(Base64.getUrlDecoder().decode(cursor), StandardCharsets.UTF_8);
+            String[] parts = raw.split("\\|", 2);
+            return new TransactionCursor(LocalDate.parse(parts[0]), UUID.fromString(parts[1]));
+        } catch (Exception e) {
+            throw new InvalidCursorException("cursor invalido: " + cursor);
+        }
     }
 }

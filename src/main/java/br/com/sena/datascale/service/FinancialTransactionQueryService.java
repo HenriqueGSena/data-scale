@@ -14,15 +14,19 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FinancialTransactionQueryService {
 
+    private static final int MAX_SIZE = 500;
+
     private final FinancialTransactionRepository repository;
 
     public CursorPage<FinancialTransactionResponse> listByCursor(String cursor, int size) {
-        List<FinancialTransaction> rows = (cursor == null)
-                ? repository.findFirstPage(size + 1)
-                : decodeAndFetch(cursor, size + 1);
+        int safeSize = clampSize(size);
 
-        boolean hasNext = rows.size() > size;
-        List<FinancialTransaction> page = hasNext ? rows.subList(0, size) : rows;
+        List<FinancialTransaction> rows = (cursor == null)
+                ? repository.findFirstPage(safeSize + 1)
+                : decodeAndFetch(cursor, safeSize + 1);
+
+        boolean hasNext = rows.size() > safeSize;
+        List<FinancialTransaction> page = hasNext ? rows.subList(0, safeSize) : rows;
 
         String nextCursor = hasNext
                 ? new TransactionCursor(
@@ -34,6 +38,10 @@ public class FinancialTransactionQueryService {
         return new CursorPage<>(page.stream().map(this::toResponse).toList(), nextCursor, hasNext);
     }
 
+    private int clampSize(int size) {
+        return Math.min(Math.max(size, 1), MAX_SIZE);
+    }
+
     private FinancialTransactionResponse toResponse(FinancialTransaction t) {
         return new FinancialTransactionResponse(
                 t.getId(), t.getTransactionDate(), t.getCategory(), t.getAmount(), t.getDescription());
@@ -43,5 +51,4 @@ public class FinancialTransactionQueryService {
         TransactionCursor c = TransactionCursor.decode(cursor);
         return repository.findPageAfterCursor(c.transactionDate(), c.id(), limit);
     }
-    // toResponse(...) mapeando para o DTO de saída
 }

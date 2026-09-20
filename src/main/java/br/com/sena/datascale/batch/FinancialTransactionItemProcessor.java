@@ -3,7 +3,7 @@ package br.com.sena.datascale.batch;
 
 import br.com.sena.datascale.dto.FinancialTransactionCsvRow;
 import br.com.sena.datascale.entities.FinancialTransaction;
-import br.com.sena.datascale.exceptions.InvalidCsvRowException;
+import br.com.sena.datascale.exception.InvalidCsvRowException;
 import org.springframework.batch.infrastructure.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 
