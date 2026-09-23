@@ -70,7 +70,7 @@ export function UploadPage() {
     const jobAtivo = status === 'RECEIVED' || status === 'PROCESSING'
 
     return (
-        <Card className="max-w-xl">
+        <Card className="max-w-full">
             <CardHeader>
                 <CardTitle>Upload de transações (CSV)</CardTitle>
             </CardHeader>

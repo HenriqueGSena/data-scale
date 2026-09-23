@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71732c5-7f4f-4d48-a7da-b91af1b18679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/axiosClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/ingestion.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/progress.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/lib/queryClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/uploadStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/types/type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/pagination.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/scroll-area.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/toast.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="164" />
+    <option name="cachedIndexableFilesCount" value="183" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -108,6 +97,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/repository/FinancialTransactionRepository.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/service/FinancialTransactionAggregationService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/index.html" root0="SKIP_INSPECTION" />
@@ -128,61 +118,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.00000743106284" />
-      <entry key="S2" value="1.0523223849974046" />
-      <entry key="S5" value="1.3464760006650809" />
-      <entry key="S10" value="1.8352461406613823" />
-      <entry key="S30" value="2.998567974362497" />
-      <entry key="S60" value="3.9770351446813326" />
-      <entry key="M2" value="5.058235446629942" />
-      <entry key="M5" value="7.825359266299567" />
-      <entry key="M10" value="13.188731342902177" />
-      <entry key="M15" value="17.398267856660038" />
-      <entry key="M30" value="25.62495223573132" />
-      <entry key="H1" value="37.84338534937783" />
-      <entry key="H2" value="54.30896161112088" />
-      <entry key="H4" value="69.41434624540766" />
-      <entry key="D1" value="88.28881972495779" />
-      <entry key="W1" value="92.30472271630828" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="5.020733403452681E-90" />
+      <entry key="S5" value="3.986828096261224E-36" />
+      <entry key="S10" value="4.228230534700387E-18" />
+      <entry key="S30" value="4.666664269527487E-6" />
+      <entry key="S60" value="0.004823005659106302" />
+      <entry key="M2" value="0.1577030338687225" />
+      <entry key="M5" value="2.190173741635221" />
+      <entry key="M10" value="10.576091721443222" />
+      <entry key="M15" value="20.34959081128432" />
+      <entry key="M30" value="42.553466995245216" />
+      <entry key="H1" value="67.75722643189046" />
+      <entry key="H2" value="93.9312726552705" />
+      <entry key="H4" value="116.07160940582985" />
+      <entry key="D1" value="143.22611640850175" />
+      <entry key="W1" value="148.99977578100112" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.6489549033077174E-35" />
-      <entry key="MS500" value="1.2954889089179725E-7" />
-      <entry key="S2" value="0.018971795068672605" />
-      <entry key="S5" value="0.2047591744649569" />
-      <entry key="S10" value="0.45250323144145277" />
-      <entry key="S30" value="0.7677277365619251" />
-      <entry key="S60" value="0.8763477322172781" />
-      <entry key="M2" value="0.9670284405235507" />
-      <entry key="M5" value="1.8196291668429483" />
-      <entry key="M10" value="3.5772282875074195" />
-      <entry key="M15" value="4.760081093410234" />
-      <entry key="M30" value="6.484111544708998" />
-      <entry key="H1" value="7.623375015591786" />
-      <entry key="H2" value="8.279122577175526" />
-      <entry key="H4" value="8.63102712478574" />
-      <entry key="D1" value="8.937284313020411" />
-      <entry key="W1" value="8.991010267444915" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000000000227" />
+      <entry key="S60" value="1.0000007541035354" />
+      <entry key="M2" value="1.0014929318315036" />
+      <entry key="M5" value="1.1677149379156764" />
+      <entry key="M10" value="2.0804716580788174" />
+      <entry key="M15" value="3.2416262358165824" />
+      <entry key="M30" value="6.001324380023982" />
+      <entry key="H1" value="8.679859053909643" />
+      <entry key="H2" value="10.579792837017811" />
+      <entry key="H4" value="11.716322904205844" />
+      <entry key="D1" value="12.775015515519227" />
+      <entry key="W1" value="12.967577635676784" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.238880634281472E-17" />
-      <entry key="MS500" value="4.6876818834018177E-4" />
-      <entry key="S2" value="0.17918147293843184" />
-      <entry key="S5" value="0.7816498552247244" />
-      <entry key="S10" value="1.6139701347270843" />
-      <entry key="S30" value="3.3721370435439484" />
-      <entry key="S60" value="4.619708691860008" />
-      <entry key="M2" value="5.8966980501143755" />
-      <entry key="M5" value="9.582345199571453" />
-      <entry key="M10" value="16.72445706860594" />
-      <entry key="M15" value="22.12599899698213" />
-      <entry key="M30" value="32.08937576506497" />
-      <entry key="H1" value="45.45571203862704" />
-      <entry key="H2" value="62.582200417927076" />
-      <entry key="H4" value="78.04233191669269" />
-      <entry key="D1" value="97.22558228351087" />
-      <entry key="W1" value="101.29565806870359" />
+      <entry key="MS100" value="4.474010273864285E-6" />
+      <entry key="MS500" value="0.0851411271650305" />
+      <entry key="S2" value="0.5401754580269422" />
+      <entry key="S5" value="0.7816528928824665" />
+      <entry key="S10" value="0.8841113577386428" />
+      <entry key="S30" value="0.959778685426091" />
+      <entry key="S60" value="0.984503574592769" />
+      <entry key="M2" value="1.148890198648044" />
+      <entry key="M5" value="3.349851804082309" />
+      <entry key="M10" value="12.642648127896825" />
+      <entry key="M15" value="23.574372470201503" />
+      <entry key="M30" value="48.53808926566084" />
+      <entry key="H1" value="76.4249223442109" />
+      <entry key="H2" value="104.50365874762531" />
+      <entry key="H4" value="127.78383477629917" />
+      <entry key="D1" value="156.0003878386739" />
+      <entry key="W1" value="161.96724552816232" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -196,48 +186,49 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DatascaleApp.executor&quot;: &quot;Debug&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/frontend-upload-screen&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sena/workspace/data-scale&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;/home/sena/.asdf/installs/nodejs/24.18.0/bin/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.DatascaleAppFront.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/sena/workspace/data-scale/frontend/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.DatascaleApp.executor": "Debug",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feature/frontend-upload-screen",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/sena/workspace/data-scale",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/home/sena/.asdf/installs/nodejs/24.18.0/bin/node",
+    "nodejs_package_manager_path": "npm",
+    "npm.DatascaleAppFront.executor": "Run",
+    "settings.editor.selected.configurable": "ml.llm.AcpAgentsConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/home/sena/workspace/data-scale/frontend/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/frontend/components/ui" />
+      <recent name="$PROJECT_DIR$/backend" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DatascaleApp">
