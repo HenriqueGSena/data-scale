@@ -1,4 +1,5 @@
 import {UploadPage} from "./pages/UploadPage.tsx";
+import {UpdateList} from "@/list/UpdateList.tsx";
 
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
             <h1 className="text-lg font-semibold">DataScale</h1>
           </div>
         </header>
-        <main className="mx-auto max-w-6xl px-4 py-8">
-        <UploadPage />
+        <main className="mx-auto max-w-6xl px-4 py-8 space-y-8">
+            <UploadPage />
+            <UpdateList />
         </main>
       </div>
   )
