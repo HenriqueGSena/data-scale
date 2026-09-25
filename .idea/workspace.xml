@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d71732c5-7f4f-4d48-a7da-b91af1b18679" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/list/UpdateList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/dataTable/columns/financial-transaction-columns.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/dataTable/data-table.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/dto/FinancialTransactionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/dto/FinancialTransactionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/ingestion.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/ingestion.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/scroll-area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/scroll-area.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/list/UpdateList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/list/UpdateList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="183" />
+    <option name="cachedIndexableFilesCount" value="192" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -95,6 +101,8 @@
     <setting file="file://$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/service/FinancialTransactionAggregationService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/index.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/src/api/ingestion.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/components/dataTable/data-table.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/components/dataTable/dataTable.tsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/vite.config.ts" root0="SKIP_INSPECTION" />
   </component>
@@ -111,61 +119,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000145577496247" />
-      <entry key="S5" value="1.0157730446647044" />
-      <entry key="S10" value="1.1736145445580335" />
-      <entry key="S30" value="1.8808903338532237" />
-      <entry key="S60" value="2.327454594941412" />
-      <entry key="M2" value="2.694035440233934" />
-      <entry key="M5" value="3.76143842842441" />
-      <entry key="M10" value="6.643798179628916" />
-      <entry key="M15" value="11.622513569704875" />
-      <entry key="M30" value="29.606762922861027" />
-      <entry key="H1" value="57.01617333004848" />
-      <entry key="H2" value="88.09672754554505" />
-      <entry key="H4" value="115.24112493272632" />
-      <entry key="D1" value="149.35891739797302" />
-      <entry key="W1" value="156.7209367691624" />
+      <entry key="MS100" value="1.0000000000000013" />
+      <entry key="MS500" value="1.0010642110470833" />
+      <entry key="S2" value="1.1806171544869728" />
+      <entry key="S5" value="1.508054857446635" />
+      <entry key="S10" value="1.7712980384248636" />
+      <entry key="S30" value="2.286139200128771" />
+      <entry key="S60" value="2.5722441710202393" />
+      <entry key="M2" value="2.7887510324205866" />
+      <entry key="M5" value="4.470830603600862" />
+      <entry key="M10" value="9.714939676433843" />
+      <entry key="M15" value="14.538103032498036" />
+      <entry key="M30" value="27.725432305200265" />
+      <entry key="H1" value="53.26222580493382" />
+      <entry key="H2" value="90.16079101871252" />
+      <entry key="H4" value="127.11977149443595" />
+      <entry key="D1" value="178.3137379630242" />
+      <entry key="W1" value="189.95712282208228" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.706344631712132E-306" />
-      <entry key="S2" value="4.387695190249522E-77" />
-      <entry key="S5" value="2.8634828580907562E-31" />
-      <entry key="S10" value="5.352264014923005E-16" />
-      <entry key="S30" value="9.123518615059262E-6" />
-      <entry key="S60" value="0.004880328937017296" />
-      <entry key="M2" value="0.15641815938667594" />
-      <entry key="M5" value="1.4959764353459024" />
-      <entry key="M10" value="3.508157758319672" />
-      <entry key="M15" value="5.073084057317757" />
-      <entry key="M30" value="8.605907327815311" />
-      <entry key="H1" value="12.501397513727103" />
-      <entry key="H2" value="15.614130396534065" />
-      <entry key="H4" value="17.615691451772413" />
-      <entry key="D1" value="19.572736692754404" />
-      <entry key="W1" value="19.938183213097286" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.9517155071092532E-240" />
+      <entry key="S5" value="1.3067293846411085E-96" />
+      <entry key="S10" value="1.150668829693701E-48" />
+      <entry key="S30" value="1.2419505861880686E-16" />
+      <entry key="S60" value="1.465781320169485E-8" />
+      <entry key="M2" value="1.6875606875516673E-4" />
+      <entry key="M5" value="0.05081181962876125" />
+      <entry key="M10" value="0.40385119729000035" />
+      <entry key="M15" value="0.9655970447156391" />
+      <entry key="M30" value="3.3204237240573713" />
+      <entry key="H1" value="7.893851708216626" />
+      <entry key="H2" value="13.140198008981027" />
+      <entry key="H4" value="17.279259080784982" />
+      <entry key="D1" value="21.911440545902252" />
+      <entry key="W1" value="22.840790275985484" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.3895822898302499" />
-      <entry key="MS500" value="0.8281706613345456" />
-      <entry key="S2" value="0.9539649237286579" />
-      <entry key="S5" value="0.992434675916266" />
-      <entry key="S10" value="1.1379735460058962" />
-      <entry key="S30" value="1.8331137255310377" />
-      <entry key="S60" value="2.296907225392867" />
-      <entry key="M2" value="2.825306626731093" />
-      <entry key="M5" value="5.234232066282513" />
-      <entry key="M10" value="10.130605951301796" />
-      <entry key="M15" value="16.675163013224804" />
-      <entry key="M30" value="38.19411659167804" />
-      <entry key="H1" value="69.50332517168455" />
-      <entry key="H2" value="103.70170411165232" />
-      <entry key="H4" value="132.85158032968909" />
-      <entry key="D1" value="168.9306733358099" />
-      <entry key="W1" value="176.65897698093605" />
+      <entry key="MS100" value="0.8408964152537148" />
+      <entry key="MS500" value="0.9667142977688745" />
+      <entry key="S2" value="1.1583829355388453" />
+      <entry key="S5" value="1.4885207274247527" />
+      <entry key="S10" value="1.7541263527601487" />
+      <entry key="S30" value="2.27122391558513" />
+      <entry key="S60" value="2.56172436319927" />
+      <entry key="M2" value="2.7825849831097758" />
+      <entry key="M5" value="4.518256544312769" />
+      <entry key="M10" value="10.11505090517284" />
+      <entry key="M15" value="15.49900659341358" />
+      <entry key="M30" value="31.03854870601112" />
+      <entry key="H1" value="61.14719392931044" />
+      <entry key="H2" value="103.29341295407968" />
+      <entry key="H4" value="144.39397995991743" />
+      <entry key="D1" value="200.22409819982485" />
+      <entry key="W1" value="212.79775188622173" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -243,8 +251,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.DatascaleApp" />
       <item itemvalue="npm.DatascaleAppFront" />
+      <item itemvalue="Spring Boot.DatascaleApp" />
     </list>
   </component>
   <component name="SharedIndexes">

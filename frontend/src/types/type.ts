@@ -25,3 +25,18 @@ export interface IngestionStatusResponse {
     finishedAt: string | null
     errorMessage: string | null
 }
+
+export interface FinancialTransactionResponse {
+    id: string
+    transactionDate: string
+    category: string
+    amount: number
+    description: string
+    createdAt: string
+}
+
+export interface CursorPage<T> {
+    content: T[]
+    nextCursor: string | null
+    hasNext: boolean
+}

@@ -1,5 +1,11 @@
 import { axiosClient } from './axiosClient'
-import type {IngestionProgress, IngestionStatusResponse, UploadResponse} from "../types/type.ts";
+import type {
+    CursorPage,
+    FinancialTransactionResponse,
+    IngestionProgress,
+    IngestionStatusResponse,
+    UploadResponse
+} from "../types/type.ts";
 
 export function uploadFile(file: File): Promise<UploadResponse> {
     const formData = new FormData()
@@ -34,4 +40,15 @@ export function subscribeToProgress(
     }
 
     return source
+}
+
+export function getFinancialTransactions(
+    cursor?: string,
+    size = 50,
+): Promise<CursorPage<FinancialTransactionResponse>> {
+    return axiosClient
+        .get<CursorPage<FinancialTransactionResponse>>('api/transactions', {
+            params: { cursor, size },
+        })
+        .then((res) => res.data)
 }
