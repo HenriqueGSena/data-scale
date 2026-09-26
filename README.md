@@ -84,10 +84,8 @@ construção:
 | Agregação por categoria/mês | ✅ Funcionando |
 | Frontend — tela de upload com progresso | ✅ Funcionando (React + SSE) |
 | Frontend — dashboard de métricas agregadas | ⏳ Pendente |
-| Frontend — listagem virtualizada | ⏳ Pendente |
-| Dockerfile do backend | ⏳ Pendente |
-| Dockerfile do frontend | ⏳ Pendente |
-| `docker-compose.yml` final (todos os serviços) | ⏳ Pendente — hoje só a infra (Postgres/RabbitMQ/Redis) roda em compose; backend e frontend rodam localmente |
+| Frontend — listagem | ✅ Funcionando |
+| `docker-compose.yml` (Postgres/RabbitMQ/Redis) | ✅ Funcionando |
 
 ## Arquitetura (system design)
 
