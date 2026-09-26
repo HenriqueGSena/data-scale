@@ -20,7 +20,7 @@ public class FinancialTransactionQueryController {
     @GetMapping("/api/transactions")
     public ResponseEntity<CursorPage<FinancialTransactionResponse>> list(
             @RequestParam(required = false) String cursor,
-            @RequestParam(defaultValue = "50") int size) {
+            @RequestParam(defaultValue = "500") int size) {
         return ResponseEntity.ok(financialTransactionQueryService.listByCursor(cursor, size));
     }
 

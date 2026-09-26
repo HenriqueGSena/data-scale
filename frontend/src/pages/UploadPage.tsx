@@ -5,6 +5,7 @@ import { Input } from "../components/ui/input.tsx"
 import { Progress } from "../components/ui/progress.tsx"
 import {useUploadStore} from "../store/uploadStore.ts";
 import {subscribeToProgress, uploadFile} from "../api/ingestion.ts";
+import type {IngestionStatus} from "@/types/type.ts";
 
 
 export function UploadPage() {
@@ -25,6 +26,18 @@ export function UploadPage() {
         setError,
         reset,
     } = useUploadStore()
+
+    const statusLabels: Record<IngestionStatus, string> = {
+        RECEIVED: 'Recebido',
+        PROCESSING: 'Processando',
+        COMPLETED: 'Concluído',
+        FAILED: 'Falhou',
+    }
+
+    function getStatusLabel(status: IngestionStatus | null): string {
+        if (!status) return 'Sem status'
+        return statusLabels[status]
+    }
 
     // Fecha a conexão SSE se o usuário sair da tela no meio de um upload.
     useEffect(() => {
@@ -89,7 +102,7 @@ export function UploadPage() {
                 {jobId && (
                     <div className="space-y-2">
                         <p className="text-sm text-muted-foreground">
-                            {fileName} — status: {status}
+                            arquivo: {fileName} — status: {getStatusLabel(status)}
                         </p>
                         <Progress value={percent} />
                         <p className="text-xs text-muted-foreground">

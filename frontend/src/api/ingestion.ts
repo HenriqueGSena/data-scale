@@ -44,7 +44,7 @@ export function subscribeToProgress(
 
 export function getFinancialTransactions(
     cursor?: string,
-    size = 50,
+    size = 500,
 ): Promise<CursorPage<FinancialTransactionResponse>> {
     return axiosClient
         .get<CursorPage<FinancialTransactionResponse>>('api/transactions', {
