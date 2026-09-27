@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d71732c5-7f4f-4d48-a7da-b91af1b18679" name="Changes" comment="Ajuste de README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="194" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="config/data-scale-config-front" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HenriqueGSena&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="largeFiles">
+      <LargeFiles>
+        <option name="unlockedFilePaths">
+          <set>
+            <option value="$PROJECT_DIR$/frontend/package-lock.json" />
+          </set>
+        </option>
+      </LargeFiles>
+    </option>
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/frontend-upload-screen" />
+                    <option name="lastUsedInstant" value="1790034009" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1790033886" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="config/data-scale-config-front" />
+                    <option name="lastUsedInstant" value="1789946876" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="chore/restructure-backend-frontend" />
+                    <option name="lastUsedInstant" value="1789943617" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HenriqueGSena/data-scale.git&quot;,
+    &quot;accountId&quot;: &quot;0b1d9188-1143-46d0-9b51-bf975e0f7644&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/README.md" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/repository/FinancialTransactionRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/service/FinancialTransactionAggregationService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/api/ingestion.ts" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/components/dataTable/data-table.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/components/dataTable/dataTable.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/vite.config.ts" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.3962357802514184E-133" />
+      <entry key="S5" value="1.0289615454215184E-53" />
+      <entry key="S10" value="3.2084571593022307E-27" />
+      <entry key="S30" value="1.6159099483286303E-9" />
+      <entry key="S60" value="5.5190826615705374E-5" />
+      <entry key="M2" value="0.011990447640191536" />
+      <entry key="M5" value="0.32511419987717877" />
+      <entry key="M10" value="1.11107485892559" />
+      <entry key="M15" value="2.197656822090785" />
+      <entry key="M30" value="8.336426475404155" />
+      <entry key="H1" value="27.7204844203303" />
+      <entry key="H2" value="65.11048233149438" />
+      <entry key="H4" value="109.53848993413094" />
+      <entry key="D1" value="179.119117665529" />
+      <entry key="W1" value="196.0017547862366" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000000216213722" />
+      <entry key="S60" value="1.0001470420765888" />
+      <entry key="M2" value="1.0121260915778374" />
+      <entry key="M5" value="1.1714305721493568" />
+      <entry key="M10" value="1.431847145776208" />
+      <entry key="M15" value="1.6518987644266132" />
+      <entry key="M30" value="2.6255645130935488" />
+      <entry key="H1" value="5.805748930287416" />
+      <entry key="H2" value="11.314683110564404" />
+      <entry key="H4" value="16.84760362739879" />
+      <entry key="D1" value="24.132453542453305" />
+      <entry key="W1" value="25.723295265857324" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.0361328863633917E-11" />
+      <entry key="MS500" value="0.006354524985407233" />
+      <entry key="S2" value="0.2823389354657076" />
+      <entry key="S5" value="0.6029874998685941" />
+      <entry key="S10" value="0.7765226975875168" />
+      <entry key="S30" value="0.9191464800642297" />
+      <entry key="S60" value="0.9589176093836703" />
+      <entry key="M2" value="1.0030112939590257" />
+      <entry key="M5" value="1.4867079045545304" />
+      <entry key="M10" value="2.536882687046888" />
+      <entry key="M15" value="3.8448751817737388" />
+      <entry key="M30" value="10.957886436941044" />
+      <entry key="H1" value="33.520792858124565" />
+      <entry key="H2" value="76.41930440228062" />
+      <entry key="H4" value="126.38153771224233" />
+      <entry key="D1" value="203.25044885560814" />
+      <entry key="W1" value="221.72487829230423" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Jbx4Lfufhmr5yuzyGXCyaL71J7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DatascaleApp.executor&quot;: &quot;Debug&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/frontend-upload-screen&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sena/workspace/data-scale&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/home/sena/.asdf/installs/nodejs/24.18.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.DatascaleAppFront.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.AcpAgentsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/sena/workspace/data-scale/frontend/node_modules/typescript/lib&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src" />
+      <recent name="$PROJECT_DIR$/frontend/components/ui" />
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DatascaleApp">
+    <configuration name="DatascaleApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="datascale" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.sena.datascale.DatascaleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatascaleAppFront" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.DatascaleAppFront" />
+      <item itemvalue="Spring Boot.DatascaleApp" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d71732c5-7f4f-4d48-a7da-b91af1b18679" name="Changes" comment="" />
+      <created>1789943376885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789943376885</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Ajuste de README.md">
+      <option name="closed" value="true" />
+      <created>1790429098825</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790429098825</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajuste de README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste de README.md" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

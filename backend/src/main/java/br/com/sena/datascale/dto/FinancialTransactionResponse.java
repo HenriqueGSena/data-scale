@@ -2,6 +2,7 @@ package br.com.sena.datascale.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 // dto/FinancialTransactionResponse.java
@@ -10,6 +11,7 @@ public record FinancialTransactionResponse(
         LocalDate transactionDate,
         String category,
         BigDecimal amount,
-        String description
+        String description,
+        LocalDateTime createdAt
 ) {
 }

@@ -44,7 +44,7 @@ public class FinancialTransactionQueryService {
 
     private FinancialTransactionResponse toResponse(FinancialTransaction t) {
         return new FinancialTransactionResponse(
-                t.getId(), t.getTransactionDate(), t.getCategory(), t.getAmount(), t.getDescription());
+                t.getId(), t.getTransactionDate(), t.getCategory(), t.getAmount(), t.getDescription(), t.getCreatedAt());
     }
 
     private List<FinancialTransaction> decodeAndFetch(String cursor, int limit) {
