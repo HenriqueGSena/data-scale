@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d71732c5-7f4f-4d48-a7da-b91af1b18679" name="Changes" comment="Ajuste de README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/controller/FinancialTransactionQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/br/com/sena/datascale/controller/FinancialTransactionQueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/ingestion.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/ingestion.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/UploadPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

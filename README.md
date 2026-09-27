@@ -83,7 +83,6 @@ construção:
 | Paginação por keyset | ✅ Funcionando, validado com `EXPLAIN ANALYZE` |
 | Agregação por categoria/mês | ✅ Funcionando |
 | Frontend — tela de upload com progresso | ✅ Funcionando (React + SSE) |
-| Frontend — dashboard de métricas agregadas | ⏳ Pendente |
 | Frontend — listagem | ✅ Funcionando |
 | `docker-compose.yml` (Postgres/RabbitMQ/Redis) | ✅ Funcionando |
 
@@ -450,7 +449,7 @@ datascale/
 
 ## Diferenciais implementados
 
-O desafio cita como diferencial opcional o uso de mensageria e/ou cache para
+O uso de mensageria e/ou cache para
 gerenciar a fila de processamento assíncrono — os dois foram implementados,
 cada um resolvendo um problema diferente:
 
